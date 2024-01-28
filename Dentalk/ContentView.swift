@@ -10,15 +10,29 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Text("Welcome to Dentalk!")
+                .font(.title)
+                .foregroundColor(Color.black)
+                .padding()
+            Image(systemName: "person.line.dotted.person.fill")
+                .foregroundColor(Color.black)
                 .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Spacer()
+            Button("Sign In", systemImage: "arrow.up"){
+                
+            }
+            
+
+            
+            
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+#if DEBUG
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
+#endif
