@@ -9,21 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        LazyVStack {
             Text("Welcome to Dentalk!")
                 .font(.title)
                 .foregroundColor(Color.black)
                 .padding()
-            Image(systemName: "person.line.dotted.person.fill")
-                .foregroundColor(Color.black)
-                .imageScale(.large)
-            Spacer()
-            Button("Sign In", systemImage: "arrow.up"){
+            Button("Sign In", systemImage: "arrow.down"){
                 
             }
-            
-
-            
             
         }
     }
