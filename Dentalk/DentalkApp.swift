@@ -14,4 +14,5 @@ struct DentalkApp: App {
             ContentView()
         }
     }
+    
 }
